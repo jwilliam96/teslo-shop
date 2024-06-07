@@ -1,0 +1,29 @@
+import { auth } from '@/auth.config';
+import { redirect } from 'next/navigation';
+
+
+export default async function ShopLayout({ children }: {
+  children: React.ReactNode;
+}) {
+
+
+  const session = await auth();
+
+
+  if (session?.user) {
+    redirect('/');
+  }
+
+
+
+  return (
+
+    <main className='bg-white md:bg-gray-200'>
+      <div >
+
+        {children}
+
+      </div>
+    </main>
+  );
+}
