@@ -26,13 +26,13 @@ export default async function Home({ searchParams }: Props) {
   return (
     <div className='flex-col'>
 
-      {/* HEADER  */}
+      {/* HEADER  IMAGE DESKTOP*/}
       <div className='hidden  h-[550px] 3xl:h-[700px] bg-fondo-tesla bg-no-repeat bg-cover bg-center md:flex justify-center items-center'>
         <Link href="#tienda" className={`text-white text-xl underline font-serif mt-24 hover:text-naranja cursor-pointer`} >COMPRA AHORA</Link>
       </div>
 
-      <div className='md:hidden  h-[500px] 3xl:h-[700px] bg-fondo-mobile bg-no-repeat bg-cover bg-center flex justify-center items-center'>
-      </div>
+      {/* IMAGE MOBILE  */}
+      <div className='md:hidden  h-[500px] 3xl:h-[700px] bg-fondo-mobile bg-no-repeat bg-cover bg-center flex justify-center items-center' />
 
 
       <p className={`text-center bg-zinc-400 py-2 ${compraFont.className}`}>ENVÍOS GRATIS A TODO EL MUNDO</p>

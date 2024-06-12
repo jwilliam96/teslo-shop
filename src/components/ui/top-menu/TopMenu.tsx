@@ -104,11 +104,13 @@ export const TopMenu = () => {
           </div>
 
           {/* CART, MENU  */}
-          <Link href={
-            ((totalItemsInCart === 0) && loaded)
-              ? '/empty'
-              : "/cart"
-          } className="mx-2">
+          <Link
+            aria-label="ir al carrito de compras"
+            href={
+              ((totalItemsInCart === 0) && loaded)
+                ? '/empty'
+                : "/cart"
+            } className="mx-2">
             <div className="relative">
               {(loaded && totalItemsInCart > 0) && (
                 <span className="fade-in absolute  text-xs px-1.5 py-0.5 rounded-full font-bold -top-2 -right-2 bg-[#EA5823] text-white">

@@ -188,7 +188,7 @@ export async function Sidebar() {
           <h2 className={`${titleSidebar.className}  mb-10 font-bold text-4xl text-center text-naranja drop-shadow-2xl`}>COMIENZA A COMPRAR</h2>
 
           <Image
-            className=" mx-auto"
+            className=" mx-auto w-auto h-auto"
             src={"/sidebar/shoping.svg"}
             width={400}
             height={500}

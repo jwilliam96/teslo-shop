@@ -61,7 +61,7 @@ export default async function ProductBySlugPage({ params }: Props) {
         <ProductMobileSlideshow
           title={product.title}
           images={product.images}
-          className="flex md:hidden"
+          className="flex md:hidden w-auto h-auto"
         />
 
         {/* Desktop Slideshow */}

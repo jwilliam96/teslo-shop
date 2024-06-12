@@ -30,7 +30,7 @@ export const ProductImage = ({
       width={width}
       height={height}
       alt={alt}
-      className={className}
+      className={`${className} w-auto h-auto`}
       style={style}
     />
   );

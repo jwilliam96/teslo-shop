@@ -53,6 +53,7 @@ export const Pagination = ({ totalPages }: Props) => {
         <ul className="flex list-style-none">
           <li className="page-item">
             <Link
+              aria-label='ir a la pagina anterior'
               className="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-300 focus:shadow-none"
               href={createPageUrl(currentPage - 1)}
             >
@@ -85,6 +86,7 @@ export const Pagination = ({ totalPages }: Props) => {
 
           <li className="page-item">
             <Link
+              aria-label='ir a la siguiente pagina'
               className="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-300 focus:shadow-none"
               href={createPageUrl(currentPage + 1)}
             >
