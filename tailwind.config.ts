@@ -14,8 +14,8 @@ const config: Config = {
         "title": "0px 1px 1px #000"
       },
       backgroundImage: {
-        'fondo-tesla': "url('/imgs/desktop.png')",
-        'fondo-mobile': "url('/imgs/mobile.png')",
+        'fondo-tesla': "url('/imgs/desktop.webp')",
+        'fondo-mobile': "url('/imgs/mobile.webp')",
       },
       colors: {
         "fondo-home": "#515659",
