@@ -35,8 +35,8 @@ export default async function Home({ searchParams }: Props) {
       </div>
 
       {/* IMAGE MOBILE  */}
-      <div className='md:hidden  h-[500px] 3xl:h-[700px] flex justify-center items-center relative'>
-        <Image className='object-cover' src={imageMobile} alt='un hombre y una mujer' fill priority />
+      <div className='md:hidden h-[500px] 3xl:h-[700px] flex justify-center items-center relative'>
+        <Image className='object-cover w-full h-full' src={imageMobile} alt='un hombre y una mujer' sizes='100vw' priority />
       </div>
 
 
