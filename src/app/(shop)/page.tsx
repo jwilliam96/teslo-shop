@@ -30,7 +30,7 @@ export default async function Home({ searchParams }: Props) {
 
       {/* HEADER  IMAGE DESKTOP*/}
       <div className='hidden  h-[550px] 3xl:h-[700px] md:flex justify-center items-center relative'>
-        <Image className='object-cover absolute inset-0 h-full w-full' src={imageDesktop} alt='un hombre y una mujer' priority />
+        <Image className='object-cover h-full' src={imageDesktop} alt='un hombre y una mujer' sizes='100vw' fill priority />
         <Link href="#tienda" className={`text-white text-xl underline font-serif mt-24 hover:text-naranja cursor-pointer relative`} >COMPRA AHORA</Link>
       </div>
 
