@@ -7,7 +7,6 @@ export const getProductBySlug = async (slug: string) => {
 
 
   try {
-
     const product = await prisma.product.findFirst({
       include: {
         ProductImage: true
@@ -16,7 +15,7 @@ export const getProductBySlug = async (slug: string) => {
         slug: slug,
       }
     })
-
+    console.log(product)
 
     if (!product) return null;
 
